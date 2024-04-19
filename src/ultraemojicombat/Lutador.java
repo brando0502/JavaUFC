@@ -20,16 +20,17 @@ public class Lutador {
         System.out.println("Diretamente de " + this.getNacionalidade());
         System.out.println("Com " + this.getIdade() + "anos e " + this.getAltura());
         System.out.println("Pesando " + this.getPeso());
-        System.out.println(this.getVitorias() + "vitórias");
-        System.out.println(this.getDerrotas() + "derrotas");
-        System.out.println(this.getEmpates() + "empates");
+        System.out.println(this.getVitorias() + " vitórias");
+        System.out.println(this.getDerrotas() + " derrotas");
+        System.out.println(this.getEmpates() + " empates");
         
     }
     
     public void status(){
-        System.out.println(this.getNome());
-        System.out.println("é um peso" + this.getCategoria());
-        System.out.println(this.getVitorias());
+        System.out.println(this.getNome() + "é um peso " + this.getCategoria());
+        System.out.println("Ganhou " + this.getVitorias() + "vezes");
+        System.out.println("Perdeu " + this.getDerrotas() + "vezes");
+        System.out.println("Empatou " + this.getEmpates() + "vezes");
         
     }
     
@@ -54,7 +55,7 @@ public class Lutador {
         this.nacionalidade = na;
         this.idade = id;
         this.altura = al;
-        this.peso = pe;
+        this.setPeso(pe);
         this.vitorias = vi;
         this.derrotas = de;
         this.empates = em;
